@@ -1,0 +1,248 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  /* background-color: #f7f2f2; */
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.navbar-content {
+  margin: 0;
+  padding: 0 30px;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgb(247, 242, 242, 0.9);
+  top: 0;
+  width: 100vw;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 30px 5px 2px rgba(247, 242, 242, 0.79);
+  -moz-box-shadow: 0px 30px 5px 2px rgba(247, 242, 242, 0.79);
+  box-shadow: 0px 30px 10px 2px rgba(247, 242, 242, 0.7);
+}
+
+.navbar-content div {
+  padding-right: 30px;
+}
+
+.navbar-content div a {
+  color: #888888;
+}
+
+.navbar-content div a:hover {
+  color: #fb6933;
+}
+
+.img-face {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 50px;
+}
+
+.graffiti {
+  position: absolute;
+  overflow: hidden;
+  width: 800px;
+  z-index: 1;
+}
+
+.graffiti img {
+  transform: rotate(-30deg) scale(1.2);
+  left: -400px;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.intro-content {
+  height: 100vh;
+}
+
+.intro-content div {
+  text-align: left;
+  margin-right: 200px;
+  width: 450px;
+}
+
+.intro-content div:last-child {
+  font-weight: 900;
+}
+
+.intro-content div:last-child {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 50px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .graffiti img {
+    left: -450px;
+  }
+
+  .intro-content div {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .graffiti img {
+    transform: rotate(-25deg) scale(1);
+    left: -400px;
+  }
+
+  .intro-content div {
+    margin-right: 20px;
+    width: 400px;
+  }
+
+  .intro-content div:first-child h1 {
+    font-size: 32px;
+  }
+
+  .intro-content div:last-child {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .graffiti img {
+    /* width: 770px; */
+    transform: rotate(-75deg) scale(1.2);
+    top: 400px;
+    left: -150px;
+  }
+
+  .intro-content {
+    padding-top: 150px;
+  }
+
+  .intro-content div:last-child {
+    margin: 30px 0;
+  }
+
+  .intro-content div {
+    text-align: center;
+    width: 100vw;
+    padding-right: 150px;
+  }
+}
+
+.hashtag-content {
+  height: 100vh;
+  padding-top: 80px;
+}
+
+.hashtag-row {
+  padding: 5px;
+}
+
+.hashtag {
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  margin: 5px 20px;
+  display: block;
+  border: 0px;
+  border-radius: 30px;
+  font-size: 20px;
+  -webkit-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.hashtag:hover {
+  background-color: lightgray;
+}
+
+.hashtag div svg {
+  margin-right: 10px;
+}
+
+[data-status="active"] {
+  background-color: #fc7d11;
+}
+
+[data-status="inactive"] {
+  background-color: #f2f2f2;
+}
+
+.carousel {
+  padding-top: 50px;
+}
+
+.carousel-inner {
+  -webkit-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+  width: 50vw;
+  /* height: 100vh */
+  height: 550px;
+}
+
+.fas {
+  font-size: 75px;
+}
+
+.page-one {
+  text-align: center;
+  font-size: 30px;
+  background-color: #121212;
+  color: #fff;
+  font-weight: 500;
+  min-height: 100%;
+}
+
+.page-one img {
+  border-radius: 30px 30px 0 0;
+}
+
+.page-two {
+  font-size: 40px;
+  /* background-color: #fff; */
+  background-color: #22126f;
+  color: #fff;
+  /* color: #121212; */
+  font-weight: 500;
+  /* height: 5vh; */
+  text-align: center;
+  height: 100%;
+}
+
+.page-two div:first-child{
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-two-content {
+  height: 100%;
+  margin: 0 75px
+}
+
+.page-two-tags {
+  width: 100%;
+  font-size: 25px;
+}
+
+.page-two-tags a {
+  border: 1px solid #fff;
+  padding: 0 5px;
+  margin: 10px 30px;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.9);
+  background-color: lightgray;
+  color: #121212
+}
+
+.page-three {
+  height: 100%;
+  background-color: #1cea8b
+}

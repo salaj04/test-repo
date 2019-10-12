@@ -1,0 +1,40 @@
+{
+  "name": "fullstack-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint --quiet .",
+    "fix": "eslint --fix .",
+    "test": "npm run lint && cross-env NODE_ENV=test mocha -u bdd --reporter spec --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyam009/fullstack-portfolio.git"
+  },
+  "author": "priyam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/priyam009/fullstack-portfolio/issues"
+  },
+  "homepage": "https://github.com/priyam009/fullstack-portfolio#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.19.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "mocha": "^6.2.1",
+    "prettier": "^1.18.2"
+  }
+}
